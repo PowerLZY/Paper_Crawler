@@ -23,7 +23,8 @@ sort_order_dict = {'descending': arxiv.SortOrder.Descending,
 
 
 def load_set(subject):
-    arxiv_db_path = os.path.abspath(os.path.join(cwd, '..', 'arXiv_db', subject))
+    # arxiv_db_path = os.path.abspath(os.path.join(cwd, '..', 'arXiv_db', subject))
+    arxiv_db_path = os.path.abspath(os.path.join(cwd, '..', 'docs'))
     arxiv_db_set = os.path.join(arxiv_db_path, 'db.txt')
     if not os.path.exists(arxiv_db_path):
         # 第一次运行
@@ -129,7 +130,8 @@ def crawler(query,
 
         # 解析存储结果
         for year, results in query_results.items():
-            markdown_fp = os.path.join(arxiv_db_path, f'{year}.md')
+            #markdown_fp = os.path.join(arxiv_db_path, f'{year}.md')
+            markdown_fp = os.path.join(arxiv_db_path, f'index.md')
             if os.path.exists(markdown_fp):
                 old_results = load_markdown(markdown_fp)
                 query_set = set([item['short_id'] for item in old_results])
