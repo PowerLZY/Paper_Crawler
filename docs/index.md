@@ -11,11 +11,6 @@
 
 ## 2021-01
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
-
 
 <summary>2021-01-02 22:04:22 - Improving DGA-Based Malicious Domain Classifiers for Malware Defense with Adversarial Machine Learning</summary>
 
