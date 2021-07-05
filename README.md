@@ -20,6 +20,9 @@
 
 ## Usage
 
+### 0. 教程
+ - [Github Actions教程：运行python代码并Push到远端仓库](https://www.cnblogs.com/marsggbo/p/12090703.html)
+
 ### 1. fork或clone到自己仓库中
 
 ### 2. 修改配置
